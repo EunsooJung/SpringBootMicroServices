@@ -1,0 +1,11 @@
+Section4: Working with Data
+ Lecture 4.1 Learning Objectives
+ 
+ * Contextualize your microservice data
+ * Understand Spring Data
+ * Work with relational databases
+ * Evolve your database using Flyway
+ * Use Redis distributed data structures
+ * Store data with MongoDB
+ * Search data using Elasticsearch
+ * Expose Spring Data repositories over REST

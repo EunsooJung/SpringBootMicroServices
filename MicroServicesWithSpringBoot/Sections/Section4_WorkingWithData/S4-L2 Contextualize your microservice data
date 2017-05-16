@@ -1,0 +1,19 @@
+Section4: Working with Data
+ Lecture 4.2: Contextualize your microservice data
+ 
+ * Data in a Microservice World
+   * Your database is not a synchronized layer
+   * Your database is not shared across microservices
+   * A database belongs to a microservice
+   * If you need data from a different database, call its microservice
+ 
+ * Bounded Context: Domain-Driven Design (Book)
+   * A conceptual boundary where a domain model is applicable.
+   * It provides Ubiquitous Language that is spoken by the team and
+   *  expressed in its carefully designed software mode - Eric Evans
+ 
+ * Polyglot Persistence
+   * "Increasingly we'll be first asking how we want to manipulate the data 
+     and only then figuring out what technology it ths best bet for it."
+      - Martin Fowler
+   

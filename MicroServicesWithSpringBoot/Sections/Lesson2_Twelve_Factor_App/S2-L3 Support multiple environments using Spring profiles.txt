@@ -1,0 +1,19 @@
+section 2: Using "Twelve-Factor App" Style Configuration
+ Lecture 2.3: Support multiple environments using Spring profiles
+ 
+ * Spring Framework Profiles
+  * Label beans as belonging to different environments (dev, qa, cloud, etc.)
+  * Spring Boot also loads application-profile.properties
+  	
+  	@Configuration
+  	public class DataSourceConfig {
+  		
+  		@Bean @Profile("dev")
+  		DataSource dev() {
+  			return ..;
+  		}
+  		
+  		@Bean @Profile("cloud")
+  		DataSource cloud() {
+  			return ...;
+  		}

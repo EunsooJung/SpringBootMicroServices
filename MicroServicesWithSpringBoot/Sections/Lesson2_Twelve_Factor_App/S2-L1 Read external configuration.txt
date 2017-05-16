@@ -1,0 +1,20 @@
+Lesson 2: Using "Twelve-Factor App" Style Configuration
+ Lecture 2.1: Read external configuration
+
+ * Spring Boot Defaults
+  * Command line arguments
+  * JNDI attributes from java:comp/env
+  * System.getProperties() properties
+  * OS environment variables
+  * External property files on filesystem - (config/)?application. (yml.properties)
+  * Internal property files in archive (config/)?application.(yml.properties)
+  * @PropertySource annotation on configuration classes
+  * Default properties from SpringApplication.getDefaultProperties()
+  
+ * Map properties to POJOs
+  * @ConfigurationProperties
+   * A way to map properties to POJOs
+   * Type-safe
+   * IDE support
+   * Can be validated (with @Valid)
+   

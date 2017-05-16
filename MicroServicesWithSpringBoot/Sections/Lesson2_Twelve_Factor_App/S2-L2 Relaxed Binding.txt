@@ -1,0 +1,12 @@
+section 2: Using "Twelve-Factor App" Style Configuration
+ Lecture 2.2: Relaxed Binding
+ 
+ * Flexible binding to @ConfigurationProperties
+   
+   @Component
+   @ConfigurationProperties(prefix="person")
+   public class ConnectionSettings {
+       private String firstName;
+   }
+   
+   person.firstName, person.first-name, PERSON_FIRST_NAME
