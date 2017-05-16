@@ -1,2 +1,9 @@
 Section4: Working with Data
- Lecture 4.5: Redis Distributed Data Structures
+ Lecture 4.5: Use Redis Distributed Data Structures
+ 
+ * Redis Distributed Data Structures
+   * Redis is a key-value cache and store
+   * Often referred to as a data structure server
+   * In-memory with replication
+   * Common use cases include:
+     * caching, counting, pub/sub, queues
