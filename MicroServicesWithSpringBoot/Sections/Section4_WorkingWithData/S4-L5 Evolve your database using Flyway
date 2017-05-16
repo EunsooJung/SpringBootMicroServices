@@ -1,2 +1,16 @@
 Section4: Working with Data
  Lecture 4.5: Evolve your database using Flyway
+ 
+ * Data Migration
+   * Microservices need to evolve, that means databases need to evolve
+   * Automated repeatable migrations are required
+   * Multiple environments are common (dev, staging, production)
+ 
+ * Out of the Box Migration Support
+   * Spring Boot supports:
+     * Liquibase
+     * Flyway
+   * Both work in similar way
+     * Add a tracking table to record the active version
+     * Apply upgrade scripts as needed
+   
