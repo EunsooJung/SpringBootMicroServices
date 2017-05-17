@@ -1,4 +1,20 @@
 Section 4: Working with Data
  Lecture 4.6: Store data with MongoDB
 
+ * MongoDB Document Database
+   * MongoDB is a cross-platform document-oriented database
+   * Store, retrieve and query JSON-like documents
+   * One of the more popular NoSQL technologies
+   
+ * Understanding the code
+
+   * The same domain to the JPA sample is used with this demo. 
+   * Rather than being a @Entity the Car here is a @Document. 
+   * It has also been updated with a position (the geo-location where the car is stored).
+
+   * The CarRepository works in the same way as any Spring Data repository and has the familiar findByMakeIgnoringCase method. The demo also includes a findByPositionNear method which shows how you can use MongoDB’s geo features.
+
+   * The DataMongoDBApplication show how queries are executed and how you can also use MongoDB’s GridFS to store blob data.
  
+ * How to install MongoDB on Mac ?
+   * https://www.youtube.com/watch?v=d8Pft3pbAZU
