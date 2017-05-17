@@ -1,5 +1,5 @@
 /**
- * 4.6 MongoDB
+ * 4.6 MongoDB Car model class
  */
 package com.ej.microservices;
 

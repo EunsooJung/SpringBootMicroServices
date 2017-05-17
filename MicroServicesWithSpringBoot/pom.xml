@@ -61,7 +61,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency> -->
-
+		<!-- S4-L6 MongoDB  -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>

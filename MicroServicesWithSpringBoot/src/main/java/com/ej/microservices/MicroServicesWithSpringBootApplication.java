@@ -1,5 +1,5 @@
 /*
- * ref.: https://github.com/livelessons-spring/building-microservices/blob/master/livelessons-data/livelessons-data-jdbc/src/main/java/demo/DataJdbcApplication.java
+ * ref.: https://github.com/livelessons-spring/building-microservices/blob/master/livelessons-data/livelessons-data-mongodb/src/main/java/demo/DataMongoDBApplication.java
  */
 
 package com.ej.microservices;
