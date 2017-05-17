@@ -7,3 +7,6 @@ Section4: Working with Data
    * In-memory with replication
    * Common use cases include:
      * caching, counting, pub/sub, queues
+ 
+ * How to Install on Mac ? 
+   * https://www.youtube.com/watch?v=vPcFJvvJgVA
