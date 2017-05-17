@@ -12,7 +12,7 @@ import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 @SpringBootApplication
-//@EnableCaching
+@EnableCaching
 public class MicroServicesWithSpringBootApplication {
 	
 	@Bean
