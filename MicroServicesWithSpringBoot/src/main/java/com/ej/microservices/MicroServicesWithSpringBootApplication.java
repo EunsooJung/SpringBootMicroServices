@@ -1,10 +1,10 @@
 /*
- * ref.: https://github.com/livelessons-spring/building-microservices/blob/master/livelessons-data/livelessons-data-jdbc/src/main/java/demo/DataJdbcApplication.java
+ * ref.: 
  */
 
 package com.ej.microservices;
 
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -13,9 +13,12 @@ import org.springframework.context.annotation.Bean;
 public class MicroServicesWithSpringBootApplication {
 	
 	@Bean
-	public CommandLineRunner exampleQuery(CarRepository repository) {
-		return args -> repository.findByMakeIgnoringCase("HONDA")
-				.forEach(System.err::println);
+	InitializingBean seedDatabase(CarRepository repository) {
+		return () -> {
+			repository.save(new Car("Honda", "Civic", 1997));
+			repository.save(new Car("Honda", "Accord", 2003));
+			repository.save(new Car("Ford", "Escort", 1985));
+		};
 	}
 	
 	public static void main(String[] args) {
