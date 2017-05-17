@@ -1,4 +1,8 @@
 Section4: Working with Data
  Lecture 4.7: Search data using Elasticsearch
  
- 
+* Elasticsearch Full-Text Search
+  * Full-text search server based on Lucene
+  * Schema free with JSON documents
+  * Available as a server or embedded
+  * Very fast search capabilities and support for fuzzy queries
