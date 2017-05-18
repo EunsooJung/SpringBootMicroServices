@@ -1,6 +1,6 @@
 # SpringBootMicroServices
-Build Microservices with Spring Boot
-## Lecture 6.1: Go beyond HTT REST microservices
+## Build Microservices with Spring Boot
+### Lecture 6.1: Go beyond HTT REST microservices
 
 * Messaging, Integration & Batch Processing
   * Microservices are fundamentally distributed systems.
