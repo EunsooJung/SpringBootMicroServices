@@ -1,8 +1,0 @@
-Section 6: Dealing with Integration and Batch Processing
-
-* Learning Objectives
-  * Lesson 6: Dealing with Integration and Batch Processing
-    * 6.1 Go beyond HTTP REST
-    * 6.2 Go Understand "Enterprise Application Integration Patterns"
-    * 6.3 Batch data processing with Spring Batch
-    * 6.4 Use CQRS to Connect microservices (Architecture style)
