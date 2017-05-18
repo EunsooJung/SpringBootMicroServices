@@ -30,5 +30,7 @@ Section 6: Dealing with Integration and Batch Processing
   * splitter: generates multiple messages from one
   * aggregator: assembles a single message from multiple message
   * service activator: delegates processing to a backend service calls
-  
+
+* Install RabbbitMQ on Mac Guide
+  * https://www.youtube.com/watch?v=8mFsh1cwlsA 
   
