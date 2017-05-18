@@ -24,10 +24,10 @@
                 
                 P -->               queue           --->              C             
                 
-                P -->     			queue           --->              C
+                P -->     			       queue           --->              C
     
     * AMQP & RabbitMQ
-      * AMQP producers			 Message broker					AMQP consumers
+      * AMQP producers            Message broker            AMQP consumers
              
              P             --> X -->  queue,queue...            --> C
                                                                 --> C
