@@ -27,3 +27,24 @@
     * API versions can be dealt with one of two way:
       * Through API URIs: https://api.foo.com/v1
       * Through media types: application/vnd.company.urapp-v3+json
+
+* Lecture 5.8: Use Differential Synchronization and JSON PATCH
+
+  * JSON PATCH with Spring Sync
+    * Differential Synchronization lets two nodes reconcile view of data
+    * Spring Sync supports differential synchronization through a 
+      DiffSyncController & JSON PATCH
+    * When applying DS, each node maintains two copies of a resource:
+      * The local node's own working copy that it may change.
+      * A shadow copy which is the local node's understanding of what a remote
+        node's working copy looks like.
+      * Upon receiving a patch, a node must apply the patch to the shadow that it
+        keeps for the node that sent the patch and to its own local copy (which may
+        have had changes itself)
+    * As it handles PATCH requests, DiffSyncController will apply one cycle of the 
+      DS flow:
+      * It will apply the patch to the server copy of the resource and to the shadow
+        copy for the client who sent the PATCH.
+      * It will create a new patch by comparing its local resource with the shadow copy.
+      * It will replace the shadow copy with the local copy of the resource.
+      * It will send the new patch on the response to the client.
