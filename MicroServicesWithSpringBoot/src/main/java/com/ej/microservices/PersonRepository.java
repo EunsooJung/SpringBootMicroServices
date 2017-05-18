@@ -1,5 +1,5 @@
 /**
- * Lecture 5.5 Use Hypermedia example tutorial
+ * Lecture 5.6 Handle errors
  */
 package com.ej.microservices;
 
@@ -16,6 +16,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 @RepositoryRestResource(path = "people")
 interface PersonRepository extends JpaRepository<Person, Long> {
 	
-	Collection<Person> findByEmail(@Param("email") String e);
+	Collection<Person> findByEmail(@Param("email") String email);
 
 }

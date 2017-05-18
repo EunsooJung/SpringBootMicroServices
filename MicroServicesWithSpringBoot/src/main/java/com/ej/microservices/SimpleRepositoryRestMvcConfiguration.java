@@ -13,7 +13,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestMvcConfiguratio
  */
 @Configuration
 public class SimpleRepositoryRestMvcConfiguration extends RepositoryRestMvcConfiguration {
-	
+
 	// @Override
 	protected void configureRepositoryRestConfiguration(
 			RepositoryRestConfiguration config) {

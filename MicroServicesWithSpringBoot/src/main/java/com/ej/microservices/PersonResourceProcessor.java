@@ -3,6 +3,7 @@
  */
 package com.ej.microservices;
 
+import org.springframework.hateoas.Link;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.stereotype.Component;
@@ -22,6 +23,8 @@ public class PersonResourceProcessor implements ResourceProcessor<Resource<Perso
 		UriComponents uriComponents = ServletUriComponentsBuilder.fromCurrentContextPath()
 				.path("/people/{id}/photo").buildAndExpand(id);
 		String uri = uriComponents.toUriString();
+		// added L5.6
+		resource.add(new Link(uri, "photo"));
 		return resource;
 	}
 }

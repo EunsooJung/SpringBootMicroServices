@@ -1,8 +1,0 @@
-Section 5: Giving your Microservice a REST
- Lecture 5.3: UnderStand content negotiation
-
-* Content Negotiation
-  * Spring MVC supports multiple types of content negotiation
-    through its ContentNegotiationStrategy:
-    * Accept header, URL extension, request parameters, or a fixed type
-    
