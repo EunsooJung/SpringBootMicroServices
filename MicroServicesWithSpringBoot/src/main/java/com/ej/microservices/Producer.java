@@ -34,7 +34,9 @@ public class Producer implements CommandLineRunner {
 		headers.put("notification-id", notification.getId());
 		
 		this.messagingTemplate.convertAndSend(
-				MicroServicesWithSpringBootApplication.NOTIFICATIONS, notification, headers,
+				MicroServicesWithSpringBootApplication.NOTIFICATIONS, 
+				notification, 
+				headers,
 				message -> {
 					System.out.println("sending " + message.getPayload().toString());
 					return message;
