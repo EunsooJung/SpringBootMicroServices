@@ -1,0 +1,35 @@
+Section 5: Giving your Microservice a REST
+ Lecture 5.1: UnderStand REST
+ 
+* REST Architecture
+  * REST is an architectural constraint based on HTTP 1.1
+  * Embraces HTTP
+  * REST is an architectural style, not a standard
+  * REST embraces HTTP (verbs, headers, request params)
+
+* GET
+  * GET requests retrieve information
+  * GET can have side-effects (but it's unexpected)
+  * GET can be conditional, or partial:
+    * IF-Modified-Since, Range
+  * GET /users/21
+
+* 
+  * DELETE requests that a resource be removed, though the deletion
+    doesn't have to be immediate
+  * DELETE / users/21
+
+* POST
+  * POST requests that the resource do something with the enclosed entity
+  * POST can be used to create or update
+  * POST / users
+    { "firstName": "Michael"}
+
+* PUT
+  * PUT requests that the entity be stored at a URI
+  * PUT can be used to create or update
+  * PUT /users/21
+    { "firstName": "Michael"}
+
+    
+  

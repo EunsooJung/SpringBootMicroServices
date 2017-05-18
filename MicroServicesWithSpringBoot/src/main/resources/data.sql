@@ -1,3 +1,4 @@
-INSERT INTO car VALUES (0, 'Honda', 'Civic',  1997);
-INSERT INTO car VALUES (1, 'Honda', 'Accord', 2003);
-INSERT INTO car VALUES (2, 'Ford',  'Escort', 1985);
+insert into person( name, email) values ( 'josh', 'josh@email.com');
+insert into person( name, email) values ( 'john', 'john@email.com');
+insert into person( name, email) values ( 'yoana', 'yoana@email.com');
+insert into person( name, email) values ( 'emo', 'emo@email.com');
