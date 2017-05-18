@@ -1,0 +1,7 @@
+Section 5: Microservice with REST
+
+* Summary
+  * REST is a constraint on the HTTP architecture
+  * Spring HATEOAS promotes long-lived services through discoverability with hypermedia.
+  * Error handling and versioning are important concerns in building an API.
+  * Differential Synchronization is a powerful tool
