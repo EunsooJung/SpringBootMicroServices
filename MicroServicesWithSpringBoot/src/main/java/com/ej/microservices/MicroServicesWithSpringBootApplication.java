@@ -1,23 +1,24 @@
 /*
- * Section 5
- *  Lecture 5.5 Use Hypermedia example tutorial
+ * Section 6
+ *  Lecture 6.3
  */
 
 package com.ej.microservices;
 
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.integration.annotation.IntegrationComponentScan;
-import org.springframework.integration.config.EnableIntegration;
 
 /**
- * the goal here is to demonstrate that Spring Integration can act as a processor for a
- * <EM>lot</EM> of different types of services.
+ * This demonstrates the Spring Batch Java configuration DSL. Spring Batch automatically
+ * runs jobs that are in the context for you (the poster example for the
+ * {@link org.springframework.boot.CommandLineRunner}. Spring Batch emits events (via the
+ * usual Spring {@link org.springframework.context.ApplicationEventPublisher} mechanism)
+ * when a Spring Batch {@link org.springframework.batch.core.Job} is finished executing.
  */
 
 @SpringBootApplication
-@EnableIntegration
-@IntegrationComponentScan
+@EnableBatchProcessing
 public class MicroServicesWithSpringBootApplication {
 	
 	public static void main(String[] args) {
