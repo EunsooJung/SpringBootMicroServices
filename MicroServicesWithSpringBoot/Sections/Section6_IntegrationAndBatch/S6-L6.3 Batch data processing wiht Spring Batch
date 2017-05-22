@@ -1,0 +1,26 @@
+Section 6: Dealing with Integration and Batch Processing
+### Lecture 6.3: Batch data processing with Spring Batch
+
+* Anatomy of Batch Job
+              *
+    Job -------------------->   Step
+     |
+     *
+     |
+     V
+    Job Instance               step scope
+     |
+     *
+     |
+     V                *
+    JobExecution   --------->  StepExecution
+  * Spring Batch Job component
+    * ItemReader
+    * ItemProcessor (Optional)
+    * ItemWriter
+
+* Spring Boot and Batch
+  * Spring Boot sets up DataSource, a TransactionManager and a
+    TaskScheduler, turns on @EnableBatchProcessing
+  * Launches all Jobs defined in the context at startup
+  * Publishes ApplicationContextEvents related to Job runs
