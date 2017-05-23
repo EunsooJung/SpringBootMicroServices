@@ -17,5 +17,4 @@ public class ActuatorExampleController {
 	public String hello() {
 		return "Hello World!";
 	}
-
 }

@@ -70,4 +70,4 @@ Section 7: Create Operation-Friendly Microservices
       --> Insecure connection --> MBeans --> org.springframework.boot --> Endpoint
       --> infoEndpoint
       
-    * Open new Terminal --> ssh -p 2000 hostname 
+    * Open new Terminal --> ssh -p 2000 hostname
