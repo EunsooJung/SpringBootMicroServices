@@ -1,0 +1,9 @@
+Section 6: Dealing with Integration and Batch Processing
+### Lecture 6.4: CQRS (Command Query Responsibility Segregation
+
+* CQRS
+  * CQRS stands for Command Query Responsibility Segregation
+  * At scale, same mental model for queries and for update does neither well
+  * Define bounded contexts for domain
+  * Use messaging to propagate changes to query models between domains (microserivces)
+  

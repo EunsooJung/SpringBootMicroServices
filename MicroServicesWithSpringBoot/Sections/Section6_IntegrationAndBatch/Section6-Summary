@@ -1,0 +1,8 @@
+Section 6: Summary
+### Summary of Section 6
+
+* Summary
+  * Messaging is a good way to share data and functionality between services
+  * Spring Integration elevates the programming model to support event-driven architectures
+  * Spring Batch simplifies data processing workloads in batch
+  * CQRS prescribes an architecture that works with bounded contexts (the domain of a microservices)
