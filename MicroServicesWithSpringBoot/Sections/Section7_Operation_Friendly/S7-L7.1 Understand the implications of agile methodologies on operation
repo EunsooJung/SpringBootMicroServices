@@ -1,0 +1,8 @@
+Section 7: Create Operation-Friendly Microservices
+### Lecture 7.1 Understand the implications of agile methodologies on operation
+
+* The Impact of Agile on Operations
+  * Being agile implies production ready shippable code
+  * Continuous delivery and continuous deployment are common for microservices
+  * You built it, you run it.
+  * Lots of different services mean lots of different things to go wrong
