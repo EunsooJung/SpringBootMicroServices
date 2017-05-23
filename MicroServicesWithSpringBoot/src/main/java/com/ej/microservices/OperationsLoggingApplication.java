@@ -11,7 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OperationsLoggingApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(OperationsLoggingApplication.class, args);
+		
+		SpringApplication myApplication = new SpringApplication(OperationsLoggingApplication.class);
+		
+		myApplication.setWebEnvironment(false);
+		myApplication.run(args);
 	}
 	
 }
