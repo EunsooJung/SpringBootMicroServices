@@ -61,3 +61,13 @@ Section 7: Create Operation-Friendly Microservices
       you to know exactly which commit was used to build the running app. 
       You also use this to get back to the POM.xml or build.gradle and know exactly 
       which library versions were used when the app was built.
+
+  * Test
+    * Start your Spring Boot Application Server
+    * Open your browser and http://localhost:8080/
+    * http://localhost:8080/autoconfig (using rest tools i.e., Postman)
+    * Open Terminal --> jconsole --> local process --> select your spring boot application
+      --> Insecure connection --> MBeans --> org.springframework.boot --> Endpoint
+      --> infoEndpoint
+      
+    * Open new Terminal --> ssh -p 2000 hostname
