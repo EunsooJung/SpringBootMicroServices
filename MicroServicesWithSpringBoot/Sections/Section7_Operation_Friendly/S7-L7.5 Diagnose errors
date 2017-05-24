@@ -1,2 +1,11 @@
 Section 7: Create Operation-Friendly Microservices
 ### Lecture 7.5 Diagnose errors
+
+* Diagnose Errors
+  * Sometimes "live" diagnosis of a service is helpful
+    * View recent requests with '/trace'
+    * Dump threads with '/dump'
+    * See environment variable with '/env'
+    * Use a deep analytics service such as New Relic
+
+
