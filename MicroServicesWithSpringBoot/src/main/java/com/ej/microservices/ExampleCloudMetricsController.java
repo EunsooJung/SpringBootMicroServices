@@ -11,17 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-public class ExampleMetricController {
-	
-	private final ExampleService service;
-	
-	public ExampleMetricController(ExampleService service) {
-		this.service = service;
-	}
+public class ExampleCloudMetricsController {
 	
 	@RequestMapping("/")
 	public String hello() {
-		this.service.call();
 		return "Hello World!";
 	}
 

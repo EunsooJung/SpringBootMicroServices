@@ -1,22 +1,45 @@
 /*
- * Lecture 7.6 Measure anything and everything with metrics
+ * Lecture 7.6.1 Measure anything and everything with metrics for Cloud
  */
 
 package com.ej.microservices;
 
+import java.io.IOException;
+import java.util.EnumSet;
+import java.util.concurrent.TimeUnit;
+
+import com.codahale.metrics.MetricRegistry;
+import org.coursera.metrics.datadog.DatadogReporter;
+import org.coursera.metrics.datadog.DatadogReporter.Expansion;
+import org.coursera.metrics.datadog.transport.HttpTransport;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.actuate.metrics.rich.InMemoryRichGaugeRepository;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Primary;
 
 @SpringBootApplication
 public class MicroServicesWithSpringBootApplication {
 	
+	@Value("${datadog.apikey}")
+	private String apiKey;
+
 	@Bean
-	@Primary
-	public InMemoryRichGaugeRepository inMemoryRichGaugeRepository() {
-		return new InMemoryRichGaugeRepository();
+	public DatadogReporter datadogReporter(MetricRegistry registry) throws IOException {
+		EnumSet<Expansion> expansions = EnumSet.of(
+				Expansion.COUNT,
+				Expansion.RATE_1_MINUTE, 
+				Expansion.RATE_15_MINUTE, 
+				Expansion.MEDIAN,
+				Expansion.P95, 
+				Expansion.P99);
+		HttpTransport httpTransport = new HttpTransport.Builder().withApiKey(this.apiKey)
+				.build();
+		DatadogReporter reporter = DatadogReporter.forRegistry(registry)
+				.withHost("livelessons").withTransport(httpTransport)
+				.withExpansions(expansions).build();
+		reporter.start(10, TimeUnit.SECONDS);
+		return reporter;
 	}
 
 	public static void main(String[] args) {
