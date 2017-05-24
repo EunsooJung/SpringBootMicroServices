@@ -1,5 +1,45 @@
 Section 7: Create Operation-Friendly Microservices
 ### Lecture 7.6 Measure anything and everything with metrics
 
+* Introduction
+  * This sample shows how you can use and extend the Spring Boot Actuator Metrics system.
+  
+* Metrics
+  * Application metrics can give early insight into potential problems
+    * How long does a request take to process ? 
+    * How many times was a page served ?
+    * How much of the database pool has been used ?
+  * Spring Boot has built-in metrics functionality
+    * DataSource Pool, Tomcat, HTTP
+  * It also supports the popular Dropwizard Metrics library
 
+* Emitting Your Own Metrics
+  * GqugeService
+    * Submits a "double" value. (e.g time taken to execute a method)
+  * CounterService
+    * Increment, decrement or reset an integer value
+      (e.g. number of times an error was thrown)
+  * To use, just @AutoWire into your code
 
+* Storing Metrics
+  * Several services exist to collate and store metrics data
+  * Graphite is one popular open source project
+  * Cloud services are often easer to use and setup
+    * Datadog
+    * Librato
+
+* Explaining the code
+  * Logging metrics
+    * Several metrics are automatically logged out of the box, however, it is also 
+    possible to log your own values. 
+    The ExampleService shows how to call the CounterService and the GaugeService.
+
+  * Custom PublicMetrics
+    * The PublicMetrics interface allows you to expose information from any source 
+    to the metrics system. The ExamplePublicMetrics provides an example.
+
+  * Rich metrics
+    * My default, metrics are recorded in an InMemory repository and simply exposed by 
+      the service. If you also want to keep maximum, minimum and average values 
+      you can use a "InMemoryRichGaugeRepository" @Primary bean. 
+      Uncomment the code in "OperationsMetricsApplication" for an example.
