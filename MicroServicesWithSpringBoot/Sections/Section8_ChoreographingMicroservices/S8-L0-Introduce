@@ -1,0 +1,11 @@
+Section 8: Choreographing Microservices
+ Lecture: Introduce
+ 
+* Choreographing Microservices Introduce
+  * 8.1 Understand deployment and scaling techniques
+  * 8.2 Discover and register services with Eureka and Consul
+  * 8.3 Route on the client with Ribbon
+  * 8.4 Prevent failure cascades using Hystrix
+  * 8.5 Isolate failures using circuit breakers
+  * 8.6 Connect web client to backend services with Zull
+
