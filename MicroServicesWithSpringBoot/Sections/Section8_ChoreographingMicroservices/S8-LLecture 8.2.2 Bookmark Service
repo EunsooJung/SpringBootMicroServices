@@ -1,2 +1,9 @@
 Section 8: Choreographing Microservices
  Lecture 8.2.2 Bookmark Service
+
+* Test exmaple
+  * Open browser: 
+    * michael-macbook-pro-local:52639/jlog/bookmarks
+    * michael-macbook-pro-local:52674/jlog/contacts
+    * localhost:8761
+
