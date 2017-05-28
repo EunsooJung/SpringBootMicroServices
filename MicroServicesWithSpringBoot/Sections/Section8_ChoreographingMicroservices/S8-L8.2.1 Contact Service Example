@@ -1,0 +1,7 @@
+Section 8: Choreographing Microservices
+ Lecture 8.2.1 Contact Service Example
+
+* pom.xml
+  * Add spring-boot-starter-web
+  * Add spring-boot-starter-data-jpa
+  * Add H2 Database
