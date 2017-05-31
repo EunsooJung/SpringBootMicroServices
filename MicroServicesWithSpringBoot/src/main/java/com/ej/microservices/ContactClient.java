@@ -14,9 +14,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @author eunsoojung
  *
  */
+
 @FeignClient("contact-service")
 public interface ContactClient {
-	
+
 	@RequestMapping(method = RequestMethod.GET, value = "/{userId}/contacts")
-	Collection<Contact> getContacts(@PathVariable("userI") String userID);
+	Collection<Contact> getContacts(@PathVariable("userId") String userId);
+
 }

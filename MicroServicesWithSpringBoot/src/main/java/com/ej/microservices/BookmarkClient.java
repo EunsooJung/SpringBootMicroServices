@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient("bookmark-service")
 public interface BookmarkClient {
-	@RequestMapping(method = RequestMethod.GET, value = "/{uerID}/bookmarks")
+
+	@RequestMapping(method = RequestMethod.GET, value = "/{userId}/bookmarks")
 	Collection<Bookmark> getBookmarks(@PathVariable("userId") String userId);
+
 }
