@@ -1,5 +1,7 @@
 Section 8: Choreographing Microservices
  Lecture 8.4 Prevent failure cascades using Hystrix
+ 
+* Monitoring failure to components
 
 * Implements Hystrix
   * 1. pom.xml
