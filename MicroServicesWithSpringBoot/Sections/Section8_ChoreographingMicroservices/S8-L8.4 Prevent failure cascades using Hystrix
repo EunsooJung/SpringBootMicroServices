@@ -1,14 +1,6 @@
 Section 8: Choreographing Microservices
  Lecture 8.4 Prevent failure cascades using Hystrix
 
-* Circuit Breaker (noun: an automatic device for stopping the flow of current in an 
-                         electric circuit  as a safety measure) pattern
-  * Isolate service failure with a basic state machine around (by definition risky)
-    service-to-service communication
-  * Also called a bulk head
-  * Hystrix is easy to plug in and easy to monitor
-
-
 * Implements Hystrix
   * 1. pom.xml
   * 2. create configuration file (application.yml and bootstrap.yml)into the /resources
