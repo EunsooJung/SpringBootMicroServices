@@ -13,3 +13,6 @@ Section 8: Choreographing Microservices
   * 1. pom.xml
   * 2. create configuration file (application.yml and bootstrap.yml)into the /resources
   * 
+
+* Test example
+  * Open Browser --> localhost:9023/pwebb/passport
