@@ -1,0 +1,9 @@
+Section 8: Choreographing Microservices
+ Lecture 8.4.1 Hystrix Dashboard
+
+* Test example
+  * Open Browser --> "localhost:9903"
+  * Go to Hystrix DashBoard --> "localhost:9023/hystrix.stream" --> Monitor Stream
+  * Open Browser --> "michael-macbook-pro-local:52674/jlong/contacts"
+  * Open Browser --> "michael-macbook-pro-local:52639/michael/bookmarks"
+  * Open Browser --> "localhost:9023/pwebb/passport"
