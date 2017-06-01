@@ -1,0 +1,22 @@
+Section 9: Developing Web Applications
+ Lecture 9.2 Serve resources from a Spring Boot application
+
+* Serving Resources
+  * You can serve static resources from your JAR
+    * In src/main/resources/[resources, public, static]
+    * From a nested JAR
+    * From a WebJar (www.webjars.org)
+  * You can add a custom favicon.ico
+
+* Using JavaScript Build Tools
+  * It doesn't matter how your resources get into your JAR
+  
+    .less                                .css
+    .js        ---> Gulp + Bower ---->   .js.min
+    .png
+                         ^              my-resources.jar
+                         |
+                         |
+                     JavaScript Libs
+                     
+* 
