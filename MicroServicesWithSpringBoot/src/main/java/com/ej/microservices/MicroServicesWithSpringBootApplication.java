@@ -1,88 +1,38 @@
 /*
- * ref.: https://github.com/livelessons-spring/building-microservices/blob/master/livelessons-data/livelessons-data-jdbc/src/main/java/demo/DataJdbcApplication.java
+ * Lecture 8.6 Connect web client to backend services with Zuul
  */
 
 package com.ej.microservices;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
 
-import com.ej.microservices.car_with_mysql.CarModelWithMySQLRepository;
+import reactor.Environment;
 
-// Section 4 Lecture 4.4 Work with relational database
+/**
+ * Visit <a href="http://localhost:9023/jlong/passport">the passport integration API</a>
+ * and the Zuul proxied API gateways for
+ * <a href="http://localhost:9023/bookmark-service/jlong/bookmarks/">bookmarks</a> and
+ * <a href="http://localhost:9023/contact-service/jlong/contacts/">contacts</a>.
+ */
+
 @SpringBootApplication
+@EnableEurekaClient
+@EnableFeignClients
+@EnableZuulProxy
 public class MicroServicesWithSpringBootApplication {
 	
-	// S4-L4: Working with Relational Database
 	@Bean
-	public CommandLineRunner exampleQuery(CarModelWithMySQLRepository repository) {
-		return args -> repository.findByMakeIgnoringCase("HONDA")
-				.forEach(System.err::println);
+	public Environment env() {
+		return Environment.initializeIfEmpty();
 	}
-	
-	
-	/*
-	@Bean
-	InitializingBean seedDatabase(CarRepository repository) {
-		return () -> {
-			repository.save(new Car("Honda", "Civic", 1997));
-			repository.save(new Car("Honda", "Accord", 2003));
-			repository.save(new Car("Ford", "Escort", 1985));
-		};
-	}
-	
-	@Bean
-	CommandLineRunner exampleQuery(CarRepository repository) {
-		return args -> 
-		repository.findByMakeIgnoringCase("HONDA").forEach(System.err::println);
-	}
-	}
-	*/
 	
 	public static void main(String[] args) {
 		SpringApplication.run(MicroServicesWithSpringBootApplication.class, args);
 	}
 	
 }
-
-/*
-@SpringBootApplication
-@EnableConfigurationProperties
-public class MicroServicesWithSpringBootApplication {
-	// Map properties to POJOs
-	@Value("${configuration.projectName}")
-	void setProjectName(String projectName) {
-		System.out.println("setting project name: " + projectName);
-	}
-	
-	@Autowired
-	void setEnvironment(Environment env) {
-		System.out.println("setting environment: " + env.getProperty("configuration.projectName"));
-	}
-	
-	/*@Autowired
-	void setConfiguraitionProjectProperties(ConfigurationProjectProperties cp) {
-		cp.getProjectName());
-	}
-	
-	public static void main(String[] args) {
-		SpringApplication.run(MicroServicesWithSpringBootApplication.class, args);
-	}
-}
-
-@Component
-@ConfigurationProperties("configuration")
-class ConfigurationProjectProperties {
-	private String projectName;
-	
-	public String getProjectName() {
-		return projectName;
-	}
-	
-	public void setProjectName(String projectName) {
-		this.projectName = projectName;
-	}
-}
-*/
