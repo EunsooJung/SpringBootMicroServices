@@ -50,4 +50,17 @@ Section 9: Developing Web Applications
     dependency manager. To regenerate the bower sources type the following (assuming that 
     you have installed bower ):
 
-    $ bower install
+    $ sudo npm install -g bower
+    Go to your git project --> bower install jquery
+    $ cat bower.json
+    Go to your Spring Boot Web App project directory
+    $ Hwarang-9:MicroServicesWithSpringBoot eunsoojung$ bower install
+
+* Calling your Microservices
+  * Usually your web capplication will call a "front door" service 
+    which will in turn co-ordinate microservices
+  * Probably using REST
+  * Possibly using Websockets
+  * How will depend on your JavaScript framework
+    * e.g. Angular : $http.post('/someUrl', {msg: 'hello word!'})
+    

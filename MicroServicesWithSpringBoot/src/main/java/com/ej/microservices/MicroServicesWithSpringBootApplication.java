@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MicroServicesWithSpringBootApplication {
 
 	public static void main(String[] args) {
-		MicroServicesWithSpringBootApplication.run(MicroServicesWithSpringBootApplication.class, args);
+		SpringApplication.run(MicroServicesWithSpringBootApplication.class, args);
 	}
 	
 }
