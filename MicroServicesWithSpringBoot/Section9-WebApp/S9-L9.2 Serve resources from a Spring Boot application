@@ -63,4 +63,8 @@ Section 9: Developing Web Applications
   * Possibly using Websockets
   * How will depend on your JavaScript framework
     * e.g. Angular : $http.post('/someUrl', {msg: 'hello word!'})
+
+* Test
+  * Start Spring Boot Server
+  * Open web browser --> "localhost:8080/index.html"
     
