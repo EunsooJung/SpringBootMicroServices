@@ -19,4 +19,35 @@ Section 9: Developing Web Applications
                          |
                      JavaScript Libs
                      
-* 
+* Why Build with JavaScript ?
+  * The ecosystem is vibrant
+    * New tools and technologies for front end apps tend to appear
+      in the JavaScript world first!
+    * Your front end developers will probably prefer it
+    * Excellent place to write tests for your JavaScript
+
+* Introduction
+  * Shows how you can serve static resources from a Spring Boot application.
+
+* Building and running the sample
+  * Use the following commands to build run the application:
+
+    $ mvn clean package
+    $ java -jar target/livelessons-web-resources-1.0.0-SNAPSHOT.jar
+
+* Understanding the code
+  * The src/main/resources folder includes public, resources and static subfolders 
+    which can all be used to serve content.
+
+* WebJars
+  * This example also shows how it is possible to serve JavaScript and CSS resources from 
+    webjars. This is automatically configured by Spring Boot so all you need to do is 
+    declare WebJar dependencies in your pom.xml
+
+* Bower
+  * If you need something more complicated that WebJars you might consider 
+    a full JavaScript build-chain. This example includes an example using the popular Bower 
+    dependency manager. To regenerate the bower sources type the following (assuming that 
+    you have installed bower ):
+
+    $ bower install
