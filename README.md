@@ -38,7 +38,7 @@
   * spring run app.groovy
   * Open Web Browser
     * localhost:8080 --> Hello World!
-### Lesson 2: Using "Twelve-Factor App" Style Configuration
+### Section 2: Using "Twelve-Factor App" Style Configuration
 * Lecture 2.1: Read external configuration
 
   * Spring Boot Defaults
