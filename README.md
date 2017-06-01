@@ -13,3 +13,12 @@
 
 * Test example
   * Open Browser --> "localhost:9023/bookmark-service/pwebb/bookmarks"
+
+### Lecture 8.7 Summary
+ 
+* Summary
+  * For all their benefits, microservices introduce complexity in the 
+    inter-service dependencies
+  * Spring Cloud provides a rich toolboz for dealing with that complexity
+    through its support of patterns like the circuit breaker, 
+    declarative REST clients, client-side load balancing and API gateways
