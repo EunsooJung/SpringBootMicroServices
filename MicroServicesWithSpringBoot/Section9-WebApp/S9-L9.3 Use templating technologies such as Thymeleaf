@@ -1,5 +1,5 @@
 Section 9: Developing Web Applications
- Lecture 9.0: Learning objectives
+ Lecture 9.3 Use templating technologies such as Thymeleaf
 
 * 9.1 Understand web applications in the microservices world
 * 9.2 Serve resources from a Spring Boot application
