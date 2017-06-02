@@ -1,0 +1,32 @@
+Section 10: Securing Microservices with Spring Security
+ Lecture 10.4 Understand OAuth
+
+* The Trouble With Passwords
+  * How do arbitray 3rd-party clients act on my behalf?
+  * What if we don't trust these clients ?
+  * How do we grant different permissions based on our confidence
+    of them?
+
+* X-Auth or Bespoke Authentication
+  * Most people just want their own clients to be able to talk
+    securely to their own services
+  * X-Auth offers one way of achieving this based on tokens
+
+* Usernames and Passwords
+  * If you can trust the client to keep a secret like a password,
+    then you can send the password using:
+    * HTTP Basic - passwords are sent in plaintext!
+    * HTTP Digest - hashed passwords, but still plaintext.
+  * SSL/TLS encryption helps prevent man-in-the-middle attacks.
+
+* OAuth
+  * OAuth is way for one (automated) process to securely identify 
+    itself to another
+  * Assumes a user context
+  * OAuth is a way authorizing a client with particular access (scopes)
+  * Conceptually, there are 3 pieces:
+    - protected REST resource
+    - authorization service
+    - client
+  * Spring Cloud Security makes short work of setting this up
+  * Single sign-on of sorts
