@@ -1,0 +1,8 @@
+Section 9: Developing Web Applications
+ Lecture 9.5 Summary
+
+* Summary
+  * SOFEA + microservices are a good fit
+  * You can use Spring Boot to serve your resources
+  * Consider using Javascript tooling with your build
+  * Consider if you need to use cache busting techniques

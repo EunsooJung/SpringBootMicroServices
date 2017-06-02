@@ -1,4 +1,49 @@
 Section 9: Developing Web Applications
  Lecture 9.4 Resolve and transform resources
 
-* 
+* Transforming Resources
+  * Richer web applications result in more network traffic
+  * Web browsers can cache files, but still call the server to see
+    if a file has changed
+  * Fingerprinting creates a unique URL for a resource.
+    Updated resources result in a new URL, and hence a new request
+  * You can't manually rewrite all your HTML just because a CSS file changes!
+  * Spring 4.1 offers ResourceResolvers and ResourceTransformers
+  * Flexible system that can be used for many things, including cache busting
+
+* ResourceResolver
+  * Two-way resolution, from URL <-> Resource
+    * URL http://localhost:8080/page-345a9f.css
+      resolves to resource src/main/resources/static/css/page.css
+    * Resource src/main/resources/static/css/page.css resolves to URL
+      http://localhsot:8080/page-345a9f.css
+
+* ResourceTransformer interface
+  * Transforms content of a resource
+  * e.g. update css to fix @import lines:
+    @IMPORT (url("/css/layout.css");
+    @IMPORT (url("/css/layout-59fe29.css");
+    
+* Introduction
+  * Builds on the templating example to show how you can use Spring’s resource resolvers and 
+    transformers to implement cache-busting.
+
+* Building and running the sample
+  * Use the following commands to build run the application:
+
+    $ mvn clean package
+    $ java -jar target/livelessons-web-transforms-1.0.0-SNAPSHOT.jar
+
+* Understanding the code
+  * The WebTransformsApplication class includes addition configuration to register special 
+    resource handlers that “fingerprint” URLs. When application.devmode is set to false 
+    in the application.properties two different version resolver strategies are used. 
+    All JavaScript resources are prefixed with an application ID, and any other resource is 
+    post-fixed with a SHA of its content.
+
+  * To test the application open a browser to http://localhost:8080 and enable networking tools. 
+    Notice how URLs inside the page are rewritten (e.g. /css/page.css and all its @imports). 
+    If you hit return in the browser URL bar you’ll notice that only a single request is 
+    needed to re-render the page. If you turn set application.devmode to true and repeat 
+    the experiment you’ll notice that multiple request are made when the page is refreshed.
+
