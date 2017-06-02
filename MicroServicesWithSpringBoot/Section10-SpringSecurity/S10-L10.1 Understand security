@@ -1,0 +1,15 @@
+Section 10: Securing Microservices with Spring Security
+ Lecture 10.1 Understand security
+
+* Spring Security
+  * Spring Security is modern framework for a modern age
+  * Centered around AuthenticationProviders
+    (and specialized UserDetailService)
+  * Provides modules for all sorts of identity provider systems
+    (Active Directory, LDAP, PAM, Kerberos, OAuth, etc)
+
+* Security Techniques
+  * HTTP Basic - Usernames and Passwords
+  * X509 SSL Certificates - Mutual authentication
+  * OAuth - A way for users to authorize application to access their
+    information without giving them passwords
