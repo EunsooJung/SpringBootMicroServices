@@ -30,3 +30,7 @@ Section 10: Securing Microservices with Spring Security
     - client
   * Spring Cloud Security makes short work of setting this up
   * Single sign-on of sorts
+
+* To Test
+  * Start server
+  * Open REST Tools (Postman) --> "http://localhost:9191/uaa/oauth/token"
