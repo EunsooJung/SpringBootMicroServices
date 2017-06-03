@@ -10,10 +10,10 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @EnableResourceServer
 @SpringBootApplication
-public class MicroServicesWithSpringBootApplication {
+public class GreetingsServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroServicesWithSpringBootApplication.class, args);
+		SpringApplication.run(GreetingsServiceApplication.class, args);
 	}
 	
 }

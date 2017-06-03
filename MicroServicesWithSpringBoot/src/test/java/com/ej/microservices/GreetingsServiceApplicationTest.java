@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class MicroServicesWithSpringBootApplicationTest {
+public class GreetingsServiceApplicationTest {
 
 	@Test
 	public void testMain() {
