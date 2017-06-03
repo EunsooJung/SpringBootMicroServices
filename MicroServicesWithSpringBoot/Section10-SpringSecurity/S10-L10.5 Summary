@@ -1,0 +1,8 @@
+Section 10: Securing Microservices with Spring Security
+ Lecture 10.5 Summary
+ 
+* Summary
+  * Security is hard, don't go it alone
+  * Many approaches to REST security, bespoke or otherwise
+  * OAuth is tailor-made for REST service security, and 
+    supports a form of single sign on
