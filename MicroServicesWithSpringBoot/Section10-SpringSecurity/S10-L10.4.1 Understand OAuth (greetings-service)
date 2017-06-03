@@ -1,2 +1,7 @@
 Section 10: Securing Microservices with Spring Security
  Lecture 10.4.1 Understand OAuth (greetings-service)
+
+* JSON Web Token (JWT)
+  * Open standard used to encode arbitrary information inside the access token
+  * The token payload include "claims"
+  * Claims can be anything but commonly provide information about the user
