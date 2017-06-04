@@ -1,4 +1,15 @@
 Section 11: Testing Microservices
  Lecture 0 : Learning objectives
  
-* 
+* 11.1 Review the example test application
+* 11.2 Test without Spring
+* 11.3 Test with Spring
+* 11.4 Mock beans
+* 11.5 Test application slices
+* 11.6 Use @JsonTest
+* 11.7 Use @DataJpaTest
+* 11.8 Use @RestClientTest
+* 11.9 Use @WebMvcTest
+* 11.10 Understand "slice" annotations
+* 11.11 Use Wiremock
+
