@@ -12,4 +12,3 @@ Section 11: Testing Microservices
 * 11.9 Use @WebMvcTest
 * 11.10 Understand "slice" annotations
 * 11.11 Use Wiremock
-
