@@ -1,4 +1,20 @@
 Section 11: Testing Microservices
  Lecture 11.1 Review the example test application
 
-* 
+* Testing Microservices
+  * Testing is critical for microservices
+  * Hard to test the entire system!
+    * Use canary deploys and rollback
+    * Have very good coverage for each service
+
+* Demo Application
+      (comming request)
+      {username}/vehicle                     username
+   ---------------->                      ------------->
+   											   vin			 Database
+                       Application        <-------------
+					(Web,Domain,Service)	   Vin              
+   <----------------                      -------------->
+   	(return)details											3rd Parth Service
+   			      						  <-------------							 
+                                              details
