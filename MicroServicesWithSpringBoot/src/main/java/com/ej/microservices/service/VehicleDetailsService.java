@@ -25,7 +25,7 @@ import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundExcepti
  *
  */
 public interface VehicleDetailsService {
-	
+
 	VehicleDetails getVehicleDetails(VehicleIdentificationNumber vin)
 			throws VehicleIdentificationNumberNotFoundException;
 

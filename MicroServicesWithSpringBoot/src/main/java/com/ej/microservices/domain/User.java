@@ -33,40 +33,31 @@ public class User {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
+
 	@Column(unique = true)
 	private String username;
-	
+
 	private VehicleIdentificationNumber vin;
-	
+
 	protected User() {
 	}
-	
+
 	public User(String username, VehicleIdentificationNumber vin) {
 		Assert.hasLength(username, "Username must not be empty");
 		Assert.notNull(vin, "VIN must not be null");
 		this.username = username;
 		this.vin = vin;
 	}
-	
-	/**
-	 * @return the id
-	 */
+
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
-	/**
-	 * @return the username
-	 */
 	public String getUsername() {
-		return username;
+		return this.username;
 	}
 
-	/**
-	 * @return the vin
-	 */
 	public VehicleIdentificationNumber getVin() {
-		return vin;
+		return this.vin;
 	}
 }

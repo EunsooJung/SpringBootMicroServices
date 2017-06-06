@@ -29,17 +29,18 @@ import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundExcepti
 public class UserVehicleService {
 	
 	private final UserRepository userRepository;
-	
+
 	private final VehicleDetailsService vehicleDetailsService;
 
-	public UserVehicleService(UserRepository userRepository, VehicleDetailsService vehicleDetailsService) {
+	public UserVehicleService(UserRepository userRepository,
+			VehicleDetailsService vehicleDetailsService) {
 		this.userRepository = userRepository;
 		this.vehicleDetailsService = vehicleDetailsService;
 	}
-	
-	public VehicleDetails getVehicleDetails(String username) 
-		throws UserNameNotFoundException , 
-		VehicleIdentificationNumberNotFoundException {
+
+	public VehicleDetails getVehicleDetails(String username)
+			throws UserNameNotFoundException,
+			VehicleIdentificationNumberNotFoundException {
 		Assert.notNull(username, "Username must not be null");
 		User user = this.userRepository.findByUsername(username);
 		if (user == null) {

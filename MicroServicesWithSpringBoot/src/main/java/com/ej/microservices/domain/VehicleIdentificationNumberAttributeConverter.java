@@ -23,26 +23,17 @@ import javax.persistence.Converter;
  *
  */
 @Converter(autoApply = true)
-public class VehicleIdentificationNumberAttributeConverter 
-	implements AttributeConverter<VehicleIdentificationNumber, String> {
+public class VehicleIdentificationNumberAttributeConverter
+		implements AttributeConverter<VehicleIdentificationNumber, String> {
 
-	/* (non-Javadoc)
-	 * @see javax.persistence.AttributeConverter#convertToDatabaseColumn(java.lang.Object)
-	 */
-	
 	@Override
 	public String convertToDatabaseColumn(VehicleIdentificationNumber attribute) {
 		return attribute.toString();
 	}
 
-	/* (non-Javadoc)
-	 * @see javax.persistence.AttributeConverter#convertToEntityAttribute(java.lang.Object)
-	 */
 	@Override
 	public VehicleIdentificationNumber convertToEntityAttribute(String dbData) {
 		return new VehicleIdentificationNumber(dbData);
 	}
-	
-	
 
 }
