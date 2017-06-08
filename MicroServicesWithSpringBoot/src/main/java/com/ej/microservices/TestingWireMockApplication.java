@@ -8,10 +8,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TestingMasterBranceApplication {
+public class TestingWireMockApplication {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(TestingMasterBranceApplication.class, args);
+		SpringApplication.run(TestingWireMockApplication.class, args);
 	}
 	
 }
