@@ -21,7 +21,6 @@ import org.springframework.util.Assert;
 
 import com.ej.microservices.domain.User;
 import com.ej.microservices.domain.UserRepository;
-import com.ej.microservices.domain.VehicleDetails;
 import com.ej.microservices.exception.UserNameNotFoundException;
 import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundException;
 

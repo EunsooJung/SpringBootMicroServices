@@ -13,7 +13,6 @@ import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
 import com.ej.microservices.config.RemoteVehicleDetailsServiceProperties;
-import com.ej.microservices.domain.VehicleDetails;
 import com.ej.microservices.domain.VehicleIdentificationNumber;
 import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundException;
 

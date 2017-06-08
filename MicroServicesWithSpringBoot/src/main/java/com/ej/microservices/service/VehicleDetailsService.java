@@ -16,7 +16,6 @@
 
 package com.ej.microservices.service;
 
-import com.ej.microservices.domain.VehicleDetails;
 import com.ej.microservices.domain.VehicleIdentificationNumber;
 import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundException;
 

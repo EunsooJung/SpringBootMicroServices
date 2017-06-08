@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.ej.microservices.domain;
+package com.ej.microservices.service;
 
 import org.springframework.util.Assert;
 

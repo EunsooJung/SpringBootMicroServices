@@ -25,9 +25,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ej.microservices.domain.VehicleDetails;
 import com.ej.microservices.exception.VehicleIdentificationNumberNotFoundException;
 import com.ej.microservices.service.UserVehicleService;
+import com.ej.microservices.service.VehicleDetails;
 
 /**
  * @author eunsoojung

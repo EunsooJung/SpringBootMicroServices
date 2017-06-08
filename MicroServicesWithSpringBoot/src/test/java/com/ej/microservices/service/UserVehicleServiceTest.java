@@ -16,7 +16,6 @@ import org.mockito.MockitoAnnotations;
 
 import com.ej.microservices.domain.User;
 import com.ej.microservices.domain.UserRepository;
-import com.ej.microservices.domain.VehicleDetails;
 import com.ej.microservices.domain.VehicleIdentificationNumber;
 import com.ej.microservices.exception.UserNameNotFoundException;
 

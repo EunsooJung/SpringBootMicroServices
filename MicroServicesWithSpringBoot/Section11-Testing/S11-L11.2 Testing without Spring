@@ -1,0 +1,15 @@
+Section 11: Testing Microservices
+ Lecture 11.2 Testing without Spring
+ 
+* When possible, always test without Spring
+  * It's fast!!
+  * It's easy to test in isolation
+  * Anyone can understand it
+
+* Use constructor injection
+* Use Mockito for collaborators
+* Use AssertJ to test state
+* Use ExpectedException @Rule for exceptions
+* Name tests consistently
+
+
