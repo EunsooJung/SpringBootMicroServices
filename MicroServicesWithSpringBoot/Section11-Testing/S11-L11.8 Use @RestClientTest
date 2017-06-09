@@ -1,0 +1,8 @@
+Section 11: Testing Microservices
+ Lecture 11.8 Use @RestClientTest
+
+* Using @RestClientTest
+  * Use to test RestTemplate calls (via RestTemplateBuilder)
+  * Auto-configures RestTemplate beans
+    * Jackson, HttpMessageConverters etc
+  * Provides a MockRestServiceServer bean
