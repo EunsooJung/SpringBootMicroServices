@@ -1,0 +1,17 @@
+Section 12: Extending Spring Boot
+ Lecture 12.1 Know when to extend Spring Boot
+ 
+* Why extend Spring Boot ?
+  * Microservices mean lots of apps
+  * What if your apps have their own conventions ?
+    * Logging requirements
+    * Security
+    * Monitoring / Metrics
+    * Databases
+
+* Typical tasks
+  * Curated dependencies
+  * Custom auto-configuration
+  * Extended Spring customizations
+  
+    
