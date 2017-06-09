@@ -1,0 +1,9 @@
+Section 12: Extending Spring Boot
+ Lecture 12.2 Understand curated dependencies
+
+* Curated dependencies
+  * Your own blessed set of dependencies
+  * Libraries known to work well together
+    * 3rd Party
+    * Internal
+  * New "Starter-POMs" for your organization
