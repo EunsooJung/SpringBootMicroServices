@@ -1,0 +1,8 @@
+Section 11: Testing Microservices
+ Lecture 11.6 Use @JsonTest
+
+* Using @JsonTest
+  * Use to test JSON marshalling and unmarshalling
+  * Auto-configures Jackson / GSON
+  * Provides JacksonTester / GsonTester
+  

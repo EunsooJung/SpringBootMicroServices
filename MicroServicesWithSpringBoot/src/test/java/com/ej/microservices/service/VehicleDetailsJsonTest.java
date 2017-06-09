@@ -1,3 +1,6 @@
+/*
+ * Lecture 11.6 Use @JsonTest
+ */
 package com.ej.microservices.service;
 
 import static org.assertj.core.api.Assertions.assertThat;
