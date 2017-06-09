@@ -1,5 +1,6 @@
 /*
  * S11-L11.3 Testing with Spring
+ * S11-L11.4 Mock Bean
  */
 
 package com.ej.microservices;
@@ -33,7 +34,9 @@ public class ReviewExmapleTestApplicationTests {
 	@Autowired
 	private TestRestTemplate restTemplate;
 	
+	// S11-L11.4 Mock Bean
 	@MockBean
+	// @SpyBean
 	private VehicleDetailsService vehicleDetailsService;
 	
 	@Before

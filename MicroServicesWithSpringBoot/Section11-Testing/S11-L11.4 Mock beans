@@ -1,0 +1,11 @@
+Section 11: Testing Microservices
+ Lecture 11.4 Mock beans
+
+* @MockBean
+  * Replaces or adds a mock bean to the ApplicationContext
+  * Takes care of:
+    * Reseting the mock (no need for @DirtiesContext)
+    * Context cache issues
+    * AOP issues
+  * @SpyBean is also available
+  
