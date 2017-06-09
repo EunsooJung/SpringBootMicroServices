@@ -1,0 +1,8 @@
+Section 11: Testing Microservices
+ Lecture 11.9 Use @WebMvcTest
+
+* Using @WebMvcTest
+  * Use to test Spring MVC mappings
+  * Auto-configures web components
+  * Provides MockMvc bean
+  * Optionally will work with HTMLUnit or Selenium
