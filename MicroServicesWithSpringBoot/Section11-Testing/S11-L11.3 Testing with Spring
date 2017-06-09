@@ -1,0 +1,31 @@
+Section 11: Testing Microservices
+ Lecture 11.3 Testing with Spring
+
+* When to test with Spring
+  * Spring provided functionally (MVC, Spring Data, etc)
+  * When testing integrations provided by Spring
+  * When testing AOP functionally (@Cacheable)
+    
+    @RunWith (SpringRunner.class) <-- JUnit: Use Spring Framework's testing support
+    @SpringBootTest <-- Spring Test: Use Spring Boot conventions
+    public class MyTest {
+    
+    }
+
+* @SpringBootTest Configuration
+  * By default will find @SpringBootConfiguration class
+  * To override
+    * Add nested @Configuration class
+    * Use classes attribute
+  * To add
+    * Use @TestConfiguration
+
+* @SpringBootText Environment
+  * Use webEnvironment attribute to:
+    * Run a mock servlet environment
+    * Start a real server on a defined port
+    * Start a real server on a random port
+      (Use with TestRestTemplate or @LocalServerPort)
+    * Use properties or value attribute
+    * Use @TestPropertySource
+    
