@@ -1,0 +1,7 @@
+Section 11: Testing Microservices
+ Lecture 11.12 Summary of Testing Microservices
+
+* Summary
+  * Structure your code so it can be tested
+  * Keep tests as simple as possible
+  * Use @SpringBootTest or "slice" testing when needed

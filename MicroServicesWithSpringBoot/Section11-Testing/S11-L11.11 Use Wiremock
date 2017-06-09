@@ -1,3 +1,16 @@
 Section 11: Testing Microservices
  Lecture 11.11 Use Wiremock
-
+   - Simulate a real server
+   - To use it, you add the Wiremock stand alone dependency
+     and then you can add a JUnit Wiremock rule.
+* Using Wiremock
+  * Mock HTTP interactions using a "real" server
+  * Alternative to MockRestServiceServer
+  * Can be used without RestTemplate
+  * Add 'wiremock-standalone' dependency
+  * Use WireMockRule
+  * Define stubs
+    this.wireMock.stubFor(
+      get(urlEqualTo("/vehicle/" + VIN + "/details"))
+      .willReturn(aResponse().withStatus(404)));
+  
