@@ -1,0 +1,30 @@
+Section 11: Testing Microservices
+ Lecture 11.10 Understand "slice" annotations
+ 
+* Understanding "slice" annotations
+  * All slice annotations are composed as follows:
+    * Usually @OverrideAutoConfiguration
+      - It one or more Type Exclude Filters, possibly one or more Auto Configure annotations
+        and perhaps Property Mapping annotations.
+    * Some @TypeExcludeFilters
+    * One or more @AutoConfigure annotations
+    * Possibly a @PropertyMapping annotation
+  * @TypeExcludeFilters
+    * Filters beans that are included via component scanning
+    * Works with TypeExcludeFilter
+    * Very important when @SpringBootApplication is used
+  * @AutoConfigure...
+    * Specific auto-configuration imports
+    * Meta-annotated with @ImportAutoConfiguration
+    * Load configuration classes via spring.factories
+  * @PropertyMapping
+    * Often used on @AutoConfigure...annotations
+    * Map annotation attributes to Environment properties
+    * Allows test configuration classes to use @Conditions
+  
+* Summary
+  * You can build your own *Test annotations
+  * You can override defaults
+    * @DataJpaTest + @AutoConfigureTestDataBase(replace=NONE)
+  * You can use @AutoConfigure annotation directly
+  
