@@ -1,0 +1,9 @@
+Section 11: Testing Microservices
+ Lecture 11.7 Use @DataJpaTest
+
+* Using @DataJpaTest
+  * Use to test domain logic and JPA mapping
+  * Auto-configures Hibernate, Spring Data and DB
+  * Uses in-memory database by default
+  * Provides TestEntityManager bean
+

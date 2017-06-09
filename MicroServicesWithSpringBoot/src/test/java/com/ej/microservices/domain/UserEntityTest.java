@@ -1,3 +1,6 @@
+/*
+ * Lecture 11.7 Use @DataJpaTest
+ */
 package com.ej.microservices.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
