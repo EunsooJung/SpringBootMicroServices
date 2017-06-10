@@ -1,9 +1,0 @@
-Section 12: Extending Spring Boot
- Lecture 12.0 Learning Objectives
- 
-* 12.1 Know when to extend Spring Boot
-* 12.2 Understand curated dependencies
-* 12.3 Write custom auto-configuration
-* 12.4 Use ApplicationListeners
-* 12.5 Use ApplicationContextInitializers
-* 12.6 Write a custom failure analyzer
