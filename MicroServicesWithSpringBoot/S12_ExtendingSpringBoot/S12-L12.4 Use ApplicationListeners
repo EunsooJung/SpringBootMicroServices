@@ -1,0 +1,14 @@
+Section 12: Extending Spring Boot
+ Lecture 12.4 Use ApplicationListeners
+  - It has various events that trigger at certain key points
+    and allows you to monitor or update the state of
+    application context.
+
+* ApplicationListener
+  * Listen for key events and update the application:
+    * ApplicationStartedEvent
+    * ApplicationEnvironmentPreparedEvent
+    * ApplicationPreparedEvent
+    * ContextRefreshedEvent
+    * ApplicationReadyEvent
+     

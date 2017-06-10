@@ -1,0 +1,8 @@
+Section 12: Extending Spring Boot
+ Lecture 12.5 Use ApplicationContextInitializers
+
+* ApplicationContextInitializer
+  * Early Spring Framework interfaces (from Spring 3.1)
+  * Used to be used in web.xml
+  * Can be used via spring.factories with Spring Boot
+  

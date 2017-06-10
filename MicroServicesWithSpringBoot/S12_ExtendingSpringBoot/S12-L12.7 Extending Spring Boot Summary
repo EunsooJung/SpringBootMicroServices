@@ -1,0 +1,9 @@
+Section 12: Extending Spring Boot
+ Lecture 12.7 Summary
+
+* Summary of Extending Spring Boot
+  * Spring Boot is designed to be extended
+  * Reduce copy/paste code in services
+  * Support other libraries
+  * See Spring-boot-autoconfigure as a source
+    for inspiration

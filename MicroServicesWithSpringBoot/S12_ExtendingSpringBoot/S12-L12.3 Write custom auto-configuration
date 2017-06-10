@@ -1,0 +1,50 @@
+Section 12: Extending Spring Boot
+ Lecture 12.3 Write custom auto-configuration
+
+* Spring Factories
+  * Used to find extensions
+  * Loaded from all jars
+    META-INF/spring.factories (in example)
+  * Simple properties file
+    key=value1, value2
+  * SpringFactoriesLoader class from spring-core
+
+* @ConfigurationProperties
+  * Recommended way to define custom properties
+  * Use spring-boot-configuration-processor for meta-data
+
+* Auto-configuration
+  * Regular @Configuration class applied automatically
+  * Usually guarded with conditions
+    * @ConditionalOnClass
+    * @ConditionalOnMissingBean
+    * @ConditionalOnProperty
+  * Be careful not to overlap packages
+
+* @ConditionalOnClass
+  * Most common Spring Boot condition
+  * Switch on configuration based on the classpath
+  * Safe to use direct class reference in annotation
+  
+* @ConditionalOnMissingBean
+  * Used to switch off configuration if user defines their own bean
+  * Allows user override of auto-configuration
+  * Can only be used on auto-configuration classes
+
+* @ConditionalOnProperty
+  * Conditional on an Environment property
+    * prefix + name (always split them up)
+    * havingValue (optional)
+    * matchIfMissing
+
+* Auto-configuration Order
+  * Sometimes you need configuration in a specific order
+    * You need your auto-configuration to happen first
+    * You depend on something else that's auto-configured
+  * @AutoConfigureBeanBefore / @AutoConfigureAfter
+
+* AutoConfigurationPackages
+  * Provides access to the @SpringBootApplication packages
+  * Often used for convention based scanning
+    * JPA, Cassandra, Neo4J
+  * See also @EntityScan

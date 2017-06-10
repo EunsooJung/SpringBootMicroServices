@@ -1,0 +1,10 @@
+Section 12: Extending Spring Boot
+ Lecture 12.6 Write a custom failure analyzer
+ 
+* Failure Analyzer
+  * Provide helpful message when something goes wrong
+  * E.g. port clash
+  * Implement FailureAnalyzer
+    * Best to extend AbstractFailureAnalyzer
+  * Add to spring.factories
+  * Return FailureAnalysis result
